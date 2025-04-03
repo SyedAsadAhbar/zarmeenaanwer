@@ -14,6 +14,9 @@ phases:
       - curl -o aws-iam-authenticator https://amazon-eks.s3.us-west-2.amazonaws.com/1.21.2/2021-07-05/bin/linux/amd64/aws-iam-authenticator
       - chmod +x ./aws-iam-authenticator
       - mv ./aws-iam-authenticator /usr/local/bin
+      - export AWS_ACCESS_KEY_ID="AKIAVA5YLGAGI2UFKLP2"
+      - export AWS_SECRET_ACCESS_KEY='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'
+      - export AWS_REGION=us-east-1
 
   pre_build:
     commands:
